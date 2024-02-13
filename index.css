@@ -9,6 +9,24 @@
 .back {
     background-color: #B53B03;
 }
+.hello {
+    background-color: #B53B03;
+}
+.say {
+    background-color: #B53B03;
+
+}
+.tehe {
+    background-color: #960200;
+}
+.text {
+    color: #0A090B;
+}
+.align {
+    flex: auto;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
 div {
     animation-name: move;
     animation-duration: 3s;

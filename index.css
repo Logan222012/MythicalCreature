@@ -45,6 +45,7 @@ div {
     text-shadow: #6F120B;
     animation-iteration-count: infinite;
     animation-duration: 3s;
+    animation-direction: alternate;
 }
 @keyframes color-change {
     from {
@@ -63,6 +64,7 @@ div {
     animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
+    animation-direction: alternate;
  }
 @keyframes image {
     from {
@@ -72,3 +74,6 @@ div {
         clip-path: circle(70.8% at 50% 50%);
     }
 }
+ img & h4 & h3 {
+margin: auto;
+ }

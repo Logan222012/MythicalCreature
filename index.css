@@ -74,6 +74,8 @@ div {
         clip-path: circle(70.8% at 50% 50%);
     }
 }
- img & h4 & h3 {
-margin: auto;
+ img , h4 , h3 {
+margin: 20px;
+padding: 20px;
+font-size: 25px;
  }

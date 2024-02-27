@@ -39,7 +39,7 @@ div {
         transform: translateX(0px);
     }
 }
- div {
+ .lol {
     animation-name: color-change;
     padding: 20px;
     text-shadow: #6F120B;
@@ -59,7 +59,7 @@ div {
         text-shadow: 0px 0px 20px #6F120B;
     }
 }
- img {
+ .sam {
     animation-name: image;
     animation-duration: 3s;
     animation-iteration-count: infinite;
@@ -78,4 +78,18 @@ div {
 margin: 20px;
 padding: 20px;
 font-size: 25px;
+ }
+ .background {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+ }
+ .run {
+overflow: hidden;
+ }
+ .bird {
+    position: absoulte;
+    z-index: 10;
+    top: 30vh;
+    left: 20vw;
  }

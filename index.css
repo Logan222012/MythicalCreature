@@ -128,3 +128,13 @@ overflow: hidden;
     top: 0px;
     right: 0px;
   }
+  @keyframes fly {
+    100%{
+        transform: translateY(-80px);
+    }
+  }
+  .birdfly {
+    animation-name: fly;
+    animation-duration: 1s;
+  }
+  

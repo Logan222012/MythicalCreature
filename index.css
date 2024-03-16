@@ -74,8 +74,8 @@ div {
     }
 }
  img , h4 , h3 {
-margin: 20px;
-padding: 20px;
+margin: 3vh;
+padding: 3vw;
 font-size: 25px;
  }
  .background {
@@ -120,13 +120,13 @@ overflow: hidden;
     font-style: normal;
   }
   .marginpadd {
-    padding: 0px;
-    margin: 0px;
+    padding: 0vh;
+    margin: 0vw;
   }
   .pipes {
     position: absolute;
-    top: 0px;
-    right: 0px;
+    top: 0vh;
+    right: 0vw;
   }
   @keyframes fly {
     100%{

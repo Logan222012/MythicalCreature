@@ -21,11 +21,20 @@
 }
 
 .tehe {
-    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0, 0, 0, 0.448) 100%);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.448) 100%);
+}
+
+.nav-link {
+    color: #9BE8E6;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+    color: #269fd7;
 }
 
 .text {
-    color: #0A090B;
+    color: #9BE8E6;
 }
 
 .align {
@@ -52,7 +61,8 @@ div {
 .lol {
     animation-name: color-change;
     padding: 20px;
-    text-shadow: #6F120B;
+    color: #9BE8E6;
+    text-shadow: #882af4;
     animation-iteration-count: infinite;
     animation-duration: 3s;
     animation-direction: alternate;
@@ -61,15 +71,13 @@ div {
 
 @keyframes color-change {
     from {
-        color: black;
         font-size: 20px;
-        text-shadow: 0px 0px 10px #6F120B;
+        text-shadow: 0px 0px 20px #000000;
     }
 
     to {
-        color: #5D0E09;
         font-size: large;
-        text-shadow: 0px 0px 20px #6F120B;
+        text-shadow: 0px 0px 40px #882af4;
     }
 }
 
@@ -321,6 +329,6 @@ h3 {
 } */
 body {
     overflow-x: hidden;
-    background: url("fire.webp") no-repeat;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("fire.webp") no-repeat;
     background-size: cover;
 }

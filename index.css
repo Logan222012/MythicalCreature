@@ -321,4 +321,6 @@ h3 {
 } */
 body {
     overflow-x: hidden;
+    background: url("fire.webp") no-repeat;
+    background-size: cover;
 }

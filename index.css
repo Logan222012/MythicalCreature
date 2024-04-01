@@ -2,234 +2,323 @@
     font-size: 25px;
     color: #9BE8E6;
 }
+
 .read {
     font-size: 20px;
     color: #9BE8E6;
 }
+
 .back {
     background-color: #B53B03;
 }
+
 .hello {
     background-color: #B53B03;
 }
+
 .say {
     background-color: #B53B03;
 }
+
 .tehe {
     background-color: #960200;
 }
+
 .text {
     color: #0A090B;
 }
+
 .align {
     flex: auto;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
+
 div {
     animation-name: move;
     animation-duration: 3s;
 }
+
 @keyframes move {
     from {
         transform: translateX(100px);
     }
+
     to {
         transform: translateX(0px);
     }
 }
- .lol {
+
+.lol {
     animation-name: color-change;
     padding: 20px;
     text-shadow: #6F120B;
     animation-iteration-count: infinite;
     animation-duration: 3s;
     animation-direction: alternate;
+    overflow-x: hidden;
 }
+
 @keyframes color-change {
     from {
-       color: black;
-       font-size: 20px;
-       text-shadow: 0px 0px 10px #6F120B;
+        color: black;
+        font-size: 20px;
+        text-shadow: 0px 0px 10px #6F120B;
     }
+
     to {
         color: #5D0E09;
         font-size: large;
         text-shadow: 0px 0px 20px #6F120B;
     }
 }
- .sam {
+
+.tomato {
+    width: 100%;
+    display: flex;
+}
+
+.sam {
     animation-name: image;
     animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
     animation-direction: alternate;
- }
+    width: 80vw;
+    height: auto;
+    margin: auto;
+}
+
 @keyframes image {
     from {
         clip-path: circle(50% at 50% 50%);
     }
+
     to {
         clip-path: circle(70.8% at 50% 50%);
     }
 }
- img , h4 , h3 {
-margin: 3vh;
-padding: 3vw;
-font-size: 25px;
- }
- .background {
-  height: 100vh;
-  width: 100vw;
-  position: relative;
- }
- .run {
-overflow: hidden;
- }
- .bird {
+
+img,
+h4,
+h3 {
+    margin: 3vh;
+    padding: 3vw;
+    font-size: 25px;
+}
+
+.background {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+.run {
+    overflow: hidden;
+}
+
+.bird {
     position: absolute;
     z-index: 10;
     top: 30vh;
     left: 20vw;
- }
- .monofett-regular {
+}
+
+.monofett-regular {
     font-family: "Monofett", monospace;
     font-weight: 400;
     font-style: large;
     font-size: 50px;
 }
 
- .honk-font {
-  font-family: "Honk", system-ui;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-variation-settings:
-    "MORF" 15,
-    "SHLN" 50;
+.honk-font {
+    font-family: "Honk", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "MORF" 15,
+        "SHLN" 50;
 }
+
 .micro-5-regular {
     font-family: "Micro 5", sans-serif;
     font-weight: 400;
     font-style: large;
     font-size: 50px;
-  }
-  .black-ops one-regular {
+}
+
+.black-ops one-regular {
     font-family: "Black Ops One", system-ui;
     font-weight: 400;
     font-style: normal;
-  }
-  .marginpadd {
+}
+
+.marginpadd {
     padding: 0vh;
     margin: 0vw;
-  }
-  .pipes {
+}
+
+.pipes {
     position: absolute;
     top: 0vh;
     right: 0vw;
-  }
-  @keyframes fly {
-    100%{
+}
+
+@keyframes fly {
+    100% {
         transform: translateY(-80px);
     }
-  }
-  .birdfly {
+}
+
+.birdfly {
     animation-name: fly;
     animation-duration: 1s;
-  }
-  
-@media (max-width: 800px) {
- .links-con{
-    width: 350px;
- }
-  h1 {
-    font-size: 20px;
-  }
-  .links {
-    font-size: 15px;
-  }
-  .vid-con{
-    width: 500px;
-    height: 300px;
-  }
-  iframe {
-    width: 500px;
-    height: 300px;
-  }
 }
- @media (max-height: 400px){
+
+@media (max-width: 800px) {
+    .links-con {
+        width: 350px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .links {
+        font-size: 15px;
+    }
+
+    .vid-con {
+        width: 500px;
+        height: 300px;
+    }
+
+    iframe {
+        width: 500px;
+        height: 300px;
+    }
+}
+
+@media (max-height: 400px) {
     .link-con {
         width: 200px;
     }
+
     h1 {
-    font-size: 15px; 
+        font-size: 15px;
     }
+
     .link {
         font-size: 10px;
     }
+
     .vids-cons {
         width: 250px;
         height: 350px;
     }
+
     iframe {
-        width: 250px ;
+        width: 250px;
         height: 350px;
     }
- }
- @media (max-width :850px) {
+}
+
+@media (max-width :850px) {
     .link-cons {
         width: 400px;
     }
+
     h1 {
         font-size: 25px;
     }
+
     .linked {
-font-size: 20px;
+        font-size: 20px;
     }
+
     .vids-con {
         width: 550px;
         height: 350px;
     }
+
     iframe {
         width: 550px;
         height: 350px;
     }
- }
- @media (max-width: 1920px) {
+}
+
+@media (max-width: 1920px) {
     .links-con {
-        width: 1920px ;
+        width: 1920px;
     }
+
     h1 {
         font-size: 50px;
     }
+
     .linkes {
-        font-size: 45px ;
+        font-size: 45px;
     }
+
     .vid-cons {
         width: 1920px;
-        height: 1080 ;
+        height: 1080;
     }
+
     iframe {
         width: 1920px;
         height: 1080px;
     }
- }
- @media (max-height: 1080px) {
+}
+
+@media (max-height: 1080px) {
     .links-cones {
-        height: 1080px ;
+        height: 1080px;
     }
+
     h1 {
         font-size: 50px;
     }
+
     .linkeds {
-        font-size: 45px ;
+        font-size: 45px;
     }
+
     .vid-cones {
         width: 1920px;
-        height: 1080 ;
+        height: 1080;
     }
+
     iframe {
         width: 1920px;
         height: 1080px;
     }
- }
+}
+
+@media (max-width: 650px) {
+    .Cheese {
+        font-size: 4rem;
+    }
+
+    .read {
+        font-size: 2.5rem;
+    }
+}
+
+/* @media (min-width: 100px) {
+    .sam {
+        width: 80vh;
+        height: auto;
+    }
+}
+
+@media (max-width: 1250px) {
+    .sam {
+        width: 700px;
+        height: auto;
+    }
+} */
+body {
+    overflow-x: hidden;
+}

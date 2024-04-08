@@ -13,9 +13,9 @@ document.addEventListener("keydown", (event) => {
         document.querySelectorAll('.pipes').forEach((event) => {
             event.remove();
         });
-        event.bird.top = '40vh';
-        game_has_started = 'Play'
-        message.innerHTML = '';
+        bird.style.top = '40vh';
+        game_has_started = true;
+        message.innerHTML = true;
         score_title.innerHTML = 'Score : ';
         score_val.innerHTML = '0';
         play();
@@ -97,6 +97,12 @@ function play() {
             let pipe_sprite = document.createElement('div');
             pipe_sprite.className = 'pipe_sprite';
             pipe_sprite_inv.style.top = pipe_posi + pipe_gap + 'vh';
+            pipe_sprite_inv.style.left = '100vw';
+            pipe_sprite.increase_score = '1';
+            document.body.appendChild(pipe_sprite);
         }
+    pipe_separation++;
+    requestAnimationFrame(create_pipe);
     }
+    requestAnimationFrame(create_pipe);
 }

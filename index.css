@@ -332,3 +332,14 @@ body {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("fire.webp") no-repeat;
     background-size: cover;
 }
+.Block {
+    position: fixed; 
+    z-index: 10; 
+    height: 10vh; 
+    font-size: 10vh; 
+    font-weight: 100; 
+    color: rgb(11, 27, 117); 
+    top: 12vh; 
+    left: 20vw; 
+    text-align: center;
+}

@@ -87,8 +87,16 @@ function play() {
     function create_pipe() {
         if (game_has_started != 'Play') return;
         if (pipe_separation > 115) {
-            pipe_separation 0
-            let pipe_posi = Math.floor(Math.random() *  )
+            pipe_separation = 0
+            let pipe_posi = Math.floor(Math.random() * 43) + 8;
+            let pipe_sprite_inv = document.createElement('div');
+            pipe_sprite_inv.className = "pipe_sprite";
+            pipe_sprite_inv.style.top = pipe_posi - 70 + 'vh';
+            pipe_sprite_inv.style.left = '100vw';
+            document.body.appendChild(pipe_sprite_inv);
+            let pipe_sprite = document.createElement('div');
+            pipe_sprite.className = 'pipe_sprite';
+            pipe_sprite_inv.style.top = pipe_posi + pipe_gap + 'vh';
         }
     }
 }

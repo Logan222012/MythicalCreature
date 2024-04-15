@@ -1,10 +1,10 @@
 .Cheese {
-    font-size: 25px;
+    font-size: 2rem;
     color: #9BE8E6;
 }
 
 .read {
-    font-size: 20px;
+    font-size: 2rem;
     color: #9BE8E6;
 }
 
@@ -43,17 +43,24 @@
     justify-content: space-evenly;
 }
 
-.container-fluid {
+.container-fluid,
+.Cheese {
     animation-name: move;
     animation-duration: 3s;
 }
 
+.Cheese {
+    animation-delay: 0.5s;
+}
+
 @keyframes move {
     from {
+        opacity: 0;
         transform: translateX(100px);
     }
 
     to {
+        opacity: 1;
         transform: translateX(0px);
     }
 }
@@ -61,22 +68,24 @@
 .lol {
     animation-name: color-change;
     padding: 20px;
+    text-align: center;
     color: #9BE8E6;
     text-shadow: #882af4;
     animation-iteration-count: infinite;
     animation-duration: 3s;
     animation-direction: alternate;
     overflow-x: hidden;
+    background-color: rgb(8, 1, 0);
 }
 
 @keyframes color-change {
     from {
-        font-size: 20px;
+        font-size: 2rem;
         text-shadow: 0px 0px 20px #000000;
     }
 
     to {
-        font-size: large;
+        font-size: 2rem;
         text-shadow: 0px 0px 40px #882af4;
     }
 }
@@ -332,4 +341,22 @@ body {
     top: 12vh;
     left: 20vw;
     text-align: center;
+}
+
+.dill {
+    flex-wrap: wrap;
+}
+
+.pickle {
+    width: 35%;
+}
+
+.block {
+    background: url("2.jpg") no-repeat;
+    height: 100vh;
+    background-size: cover;
+    width: 100%;
+    background-position-y: 60%;
+    display: flex;
+    align-items: center;
 }

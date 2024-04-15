@@ -35,6 +35,8 @@ body {
     height: 70vh;
     width: 6vw;
     background-color: green;
+    background: url("pipe.webp");
+    background-size: contain;
 }
 
 .message {
@@ -43,8 +45,9 @@ body {
     height: 10vh;
     font-size: 10vh;
     font-weight: 100;
-    color: black;
+    color: rgb(255, 19, 90);
     top: 12vh;
+    font-family: "Honk", system-ui;
     left: 20vw;
     text-align: center;
 }
@@ -52,16 +55,19 @@ body {
 .score {
     position: fixed;
     z-index: 10;
-    height: 10vh;
-    font-size: 10vh;
+    height: 4rem;
+    font-size: 3rem;
     font-weight: 100;
-    color: goldenrod;
+    color: rgb(0, 255, 213);
     top: 0;
-    left: 0;
+    right: 0;
+    font-family: "Micro 5", sans-serif;
+    padding: 2rem;
 }
 
 .score_val {
-    color: gold;
+    color: rgb(0, 255, 213);
+    font-family: "Micro 5", sans-serif;
 }
 
 @keyframes scroling {
@@ -72,4 +78,10 @@ body {
     to {
         background-position: 100%, 50%;
     }
+}
+
+.bangers-regular {
+    font-family: "Bangers", system-ui;
+    font-weight: 400;
+    font-style: normal;
 }

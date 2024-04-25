@@ -11,12 +11,13 @@ body {
 
 .background {
     height: 100vh;
-    width: 100vw;
+    width: 200vw;
     background: url("Scifi lab Files/layers/back.png");
-    background-size: cover;
+    background-size: contain;
     animation-name: scroling;
     animation-duration: 4s;
     animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
 .bird {
@@ -33,10 +34,10 @@ body {
     top: 40vh;
     left: 100vw;
     height: 70vh;
-    width: 6vw;
+    width: 10vw;
     background-color: green;
     background: url("pipe.webp");
-    background-size: contain;
+    background-size: cover;
 }
 
 .message {
@@ -61,22 +62,22 @@ body {
     color: rgb(0, 255, 213);
     top: 0;
     right: 0;
-    font-family: "Micro 5", sans-serif;
+    font-family: "Bangers", system-ui;
     padding: 2rem;
 }
 
 .score_val {
     color: rgb(0, 255, 213);
-    font-family: "Micro 5", sans-serif;
+    font-family: "Bangers", system-ui;
 }
 
 @keyframes scroling {
     from {
-        background-position: 0%, 50%;
+        background-position: 0% 0%;
     }
 
     to {
-        background-position: 100%, 50%;
+        background-position: -50% 0;
     }
 }
 
